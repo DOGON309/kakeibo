@@ -19,4 +19,5 @@ from django.urls.conf import include, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('kakeibo/', include('kakeibo.urls')),
 ]

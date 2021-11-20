@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  個別記録
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>個別記録</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <span class="glyphicon glyphicon-list-alt"></span>
+              個別記録
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="date">日付</label>
+                  <input type="text" class="form-control" id="date" value="{{ date }}" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="category">カテゴリ</label>
+                  <input type="text" class="form-control" id="category" value="{{ category }}" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="amount">金額</label>
+                  <input type="text" class="form-control" id="category" value="{{ tax }}" readonly>
+                </div>
+                </div>
+                </div>
+{% endblock 'content' %}
